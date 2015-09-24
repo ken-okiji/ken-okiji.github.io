@@ -4,12 +4,157 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <title>Ken Okijiポートフォリオ</title>
+    <meta name="description" content="Ken Okijiのポートフォリオです。私が作成したWebサービスを紹介いたします。">
+    <meta name="keywords" content="Webデザイン,静岡,プログラミング,Ruby,Ruby on Rails">
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- カスタム用のCSS読み込み -->
+    <link rel="stylesheet" href="custom.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+    <!--ヘッダー-->
+    <header>
+      <!--ナビゲーション-->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Super Galaxy Design</a>
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">サイト概要</a></li>
+              <li><a href="#service">サービス紹介</a></li>
+              <li><a href="#profile">自己紹介</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!--メイン画像-->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Super Galaxy Design</h1>
+        <p>デザインとくだらないものを創造する。</p>
+      </div>
+    </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--サイト概要-->
+    <section id="about" class="contents-block">
+      <h1>サイト概要</h1>
+      <div class="row">
+        <div class="col-md-4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><p>確かな目と経験でふざけたサービスを提案いたします。</p></div>
+        <div class="col-md-4"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span><p>丁寧かつユーザー目線の対応には定評があったりなかったり。</p></div>
+        <div class="col-md-4"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span><p>メンテナンスはうっかり大事なところを見落としがち。</p></div>
+      </div>
+    </section>
+
+    <!--サービス紹介-->
+    <section id="service" class="contents-block">
+      <h1>サービス紹介</h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-md-offset-1">
+          <div class="thumbnail">
+            <img src="http://lorempixel.com/300/300/city" alt="メッセージボード">
+            <div class="caption">
+              <h2>メッセージボード</h2>
+              <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5">
+          <div class="thumbnail">
+            <img src="http://lorempixel.com/300/300/city" alt="Twitterクローン">
+            <div class="caption">
+              <h2>Twitterクローン</h2>
+              <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-md-offset-1">
+          <div class="thumbnail">
+            <img src="http://lorempixel.com/300/300/city" alt="モノリスト">
+            <div class="caption">
+              <h2>モノリスト</h2>
+              <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5">
+          <div class="thumbnail">
+            <img src="http://lorempixel.com/300/300/city" alt="オリジナルサービス">
+            <div class="caption">
+              <h2>オリジナルサービス</h2>
+              <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--自己紹介-->
+    <section id="profile" class="contents-block">
+      <h1>自己紹介</h1>
+      <img src="photo.jpg" alt="Ken Okiji" class="profile-img">
+      <h2>Ken Okiji</h2>
+      <p>スローガンは「くだらないことに一生懸命」。<br>金曜日の夜に飲むビールの為に生きている。ただし、他の日も飲んじゃうタイプ。</p>
+      <ul>
+        <li><a href="https://github.com/ken-okiji" target="_blank">GitHub</a></li>
+      </ul>
+    </section>
+    
+    <!--お問い合わせ-->
+    <section id="contact" class="contents-block">
+      <h1>お問い合わせ</h1>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">お名前</label>
+          <div class="col-sm-8">
+            <input type="name" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Eメール</label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">コメント</label>
+          <div class="col-sm-8">
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-6">
+            <button type="submit" class="btn btn-default">メールを送信する</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  
+    <!--フッター-->
+    <footer>
+			<div class="container">
+				<small>
+					&copy; 2015 Super Galaxy Design.
+				</small>
+			</div>
+		</footer>
   </body>
 </html>
